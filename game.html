@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Memory Game</title>
+</head>
+<body class="game">
+  <div class="gameover__overlay">
+    <div class="gameover__message">
+      <p class="gameover__headline">You did it!</p>
+      <p class="gameover__subheadline">Game over! Here's how you got on...</p>
+    </div>
+    <div class="gameover__stats">
+      <div class="gameover__time-elapsed">
+        <span class="gameover__time-elapsed-label label">Time Elapsed</span>
+        <span class="gameover__time-elapsed-amount amount">1:53</span>
+      </div>
+      <div class="gameover__moves-taken">
+        <span class="gameover__moves-taken-label label">Moves Taken</span>
+        <span class="gameover__moves-taken-amount amount">25</span>
+      </div>
+    </div>
+    <div class="gameover__options">
+      <button class="gameover__btn btn btn-primary restart">Restart</button>
+      <button class="gameover__btn btn new-game">Setup New Game</button>
+    </div>
+  </div>
+  <nav class="nav">
+    <img src="/img/logo.svg" alt="Memory Game Logo" class="nav__logo">
+    <button class="nav__menu-btn btn">Menu</button>
+  </nav>
+
+  <section class="grid" role="group">
+
+  </section>
+
+  <div class="players" role="group">
+
+  </div>
+
+  <script src="/js/gameSession.js" type="module"></script>
+  <script src="/js/game.js" type="module"></script>
+</body>
+</html>

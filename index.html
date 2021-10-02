@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/8f10ff1119.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/8f10ff1119.js" crossorigin="anonymous"></script>
+  <title>Memory Game</title>
+</head>
+<body class="start">
+  
+  <section class="game-start">
+    <img class="game-start__logo" src="/img/logo-white.svg" />
+    <div role="group" class="game-start__modal">
+      <div class="game-start__setting theme">
+        <span class="game-start__setting-label">Select Theme</span>
+        <div class="game-start__setting-options">
+          <span data-theme="numbers" class="game-start__setting-option selected">Numbers</span>
+          <span data-theme="icons" class="game-start__setting-option">Icons</span>
+        </div>
+      </div>
+      <div class="game-start__setting">
+        <span class="game-start__setting-label">Number of Players</span>
+        <div class="game-start__setting-options players-count">
+          <span class="game-start__setting-option selected">1</span>
+          <span class="game-start__setting-option">2</span>
+          <span class="game-start__setting-option">3</span>
+          <span class="game-start__setting-option">4</span>
+        </div>
+      </div>
+      <div class="game-start__setting">
+        <span class="game-start__setting-label">Grid Size</span>
+        <div class="game-start__setting-options grid-size">
+          <span class="game-start__setting-option selected">4x4</span>
+          <span class="game-start__setting-option">6x6</span>
+        </div>
+      </div>
+      <button class="game-start__btn btn btn-primary">Start Game</button>
+    </div>
+  </section>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

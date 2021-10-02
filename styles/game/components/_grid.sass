@@ -1,0 +1,67 @@
+.grid
+  display: grid
+  justify-items: center
+  grid-gap: 1rem
+  padding: 7.5rem 0
+
+  &.large
+    grid-template-columns: repeat(6, 1fr)
+
+    & > div
+      width: 45px
+      height: 45px
+
+  &.small
+    grid-template-columns: repeat(4, 1fr)
+
+    & > div
+      width: 72px
+      height: 72px
+
+  &__item
+    font-size: 24px
+    color: #fff
+    perspective: 500px
+
+    &-inner
+      transform-style: preserve-3d
+      transition: transform .5s ease-in
+      width: 100%
+      height: 100%
+      position: relative
+
+      &.selected
+        transform: rotateY(180deg)!important
+
+      &.matched
+        transform: rotateY(180deg)
+
+        & > .grid__item-back
+          background-color: $primary-accent
+          animation: changeColor 1s ease-in .5s forwards
+
+    &-front
+      background-color: $dark-accent
+      position: absolute
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      backface-visibility: hidden
+      
+    &-back
+      background-color: $light-accent
+      border-radius: 50%
+      z-index: -1
+      backface-visibility: hidden
+      width: 100%
+      height: 100%
+      display: grid
+      place-content: center
+      transform: rotateY(180deg)
+
+@keyframes changeColor
+  0%
+    background-color: $primary-accent
+
+  100%
+    background-color: $light-accent

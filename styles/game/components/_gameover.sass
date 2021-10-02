@@ -1,0 +1,51 @@
+.gameover
+  &__overlay
+    position: absolute
+    top: 20%
+    left: 50%
+    transform: translate(-50%)
+    width: 90%
+    padding: 2.4rem
+    z-index: 2
+    background: $light-primary
+    border-radius: 10px
+    display: none
+
+  &__message
+    text-align: center
+
+  &__headline
+    font-size: 2.4rem
+    color: $start-game-bg
+    font-weight: bold
+    margin-bottom: .8rem
+
+  &__subheadline
+    color: $label
+    font-size: 1.4rem
+    font-weight: bold
+
+  &__stats
+    margin: 2.4rem 0
+
+  &__stats > div
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $lighter-accent
+    border-radius: 8px
+    margin: .8rem 0
+    padding: 1.6rem
+
+    & > .label
+      color: $label
+      font-size: 1.3rem
+      font-weight: bold
+
+    & > .amount
+      color: $dark-accent
+      font-weight: bold
+      font-size: 2rem
+
+  &__options > button:first-of-type
+    margin-bottom: 1.6rem

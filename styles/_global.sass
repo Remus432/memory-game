@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+  font-family: 'Atkinson Hyperlegible', sans-serif
+
+body
+  font-size: 1.8rem
+  padding: 2rem
+
+  &.start
+    background-color: $start-game-bg
+
+  &.game
+    background-color: $light-primary
+
+.overlay::after
+  content: ""
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: #000
+  opacity: .5
+  top: 0
+  left: 0
